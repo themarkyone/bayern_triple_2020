@@ -2,17 +2,7 @@ const card = Handlebars.compile(
     document.querySelector('#cardTemplate').innerHTML
 );
 
-let cardlinks = JSON.parse(localStorage["cardLinks"]);
-    document.querySelector('#cardSection').innerHTML = "";
-for (let card of cardlinks) {
-    document.querySelector('#cardSection').innerHTML += card({
-        title: card.name,
-        link: card.link,
-        pic: card.pic,
-    });
-}
-
-var cardLinks = [
+const cardLinks = [
     {
         title: "Treble 2019-2020",
         link: "https://www.footyheadlines.com/2020/08/bayern-munich-2020-champions-league-and-treble-collections.html",
@@ -26,7 +16,7 @@ var cardLinks = [
     {
         title: "Bayern 1973-1976",
         link: "https://www.uefa.com/uefachampionsleague/news/0253-0d7ff546eab3-5cb419e6b81a-1000--the-greatest-teams-of-all-time-bayern-1973-76/?referrer=%2Fuefachampionsleague%2Fnews%2Fnewsid%3D2252711",
-        pic: "https://www.google.ca/search?q=bayern+munich+european+champions+74-76&safe=active&hl=zh-CN&sxsrf=ALeKk03EchvOqPQET8d2mOWzqobivSQVcg:1599273380308&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjBgO3N_dDrAhWwhXIEHSKCA9oQ_AUoAnoECAwQBA&biw=1379&bih=726#imgrc=TfTVj56lNTsy5M",
+        pic: "https://i.imgur.com/dVxl6Rx.jpg",
     },
     {
         title: "More Honors",
@@ -34,3 +24,12 @@ var cardLinks = [
         pic: "https://fcbayern.com/binaries/content/gallery/fc-bayern/homepage/club/erfolge/meisterschaft/1969_header.jpg",
     },
 ]
+
+for (let c of cardLinks) {
+    document.querySelector('#cardSection').innerHTML += card({
+        title: c.title,
+        link: c.link,
+        pic: c.pic,
+    });
+}
+
