@@ -40,6 +40,16 @@ body {
   padding-bottom: 1rem;
 }
 
+.treble-intro {
+  margin-bottom: 2rem;
+}
+
+#cardSection {
+  padding-left: 8rem;
+  padding-right: 8rem;
+  margin-bottom: 3rem;
+}
+
 #cardSection h3 {
   text-align: center;
   padding-bottom: 1rem;
@@ -49,13 +59,21 @@ body {
   text-align: center;
   margin-bottom: 2rem;
   width: 30rem;
+  height: auto;
+  align-items: center;
 }
 
 .card-img {
+  width: 27rem;
+  height: 15rem;
   margin-bottom: 0.5rem;
 }
 
 #sourceSection h3 {
   text-align: center;
   padding-bottom: 1rem;
+}
+
+#sourceSection a {
+  text-align: center;
 }
