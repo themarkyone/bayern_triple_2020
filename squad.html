@@ -54,11 +54,23 @@
         <!--intro section-->
         <section id="introSection">
           <h1>Bayern Munich Squad 2020</h1>
+          <img src="https://s.hs-data.com/bilder/teamfotos/640x360/222.jpg" class="team-photo mx-auto">
         </section>
         
         <!--squad section-->
         <section id="squadSection">
-          <h2>Members</h2>
+          <h2>Important Members</h2>
+          <p>
+            As people say, soccer is not a one-person sport, but a star player could always make a significant change 
+          in the field. In the 2019-2020 season, the following Bayern Munich members have participated in most matches, 
+          and have accomplished a huge contribution to our treble. 
+          </p>
+          <div class="row" id="row1">
+            <!-- cards in the first row-->
+          </div>
+          <div class="row" id="row2">
+            <!-- cards in the second row-->
+          </div>
         </section>
 
         <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -71,12 +83,18 @@
         <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 
-        <script id="cardTemplate">
+        <script id="squadTemplate">
           <div class="card mx-auto">
             <div class="card-body">
+              <div class="jersey-num">{{ number }}</div>
               <img src="{{ pic }}" class="card-img-top card-img"></img>
-              <h5 class="card-title">{{ title }}</h5>
-              <a href="{{ link }}" class="btn btn-primary"><button class="btn mx-auto"> Read More </button></a>
+              <h5 class="card-name">{{ name }}</h5>
+              <h4 class="card-category">Date of birth</h4>
+              <h5 class="card-text">{{ birth }}</h5>
+              <h4 class="card-category">Position</h4>
+              <h5 class="card-text">{{ position }}</h5>
+              <h4 class="card-category">Nationality</h4>
+              <h5 class="card-text">{{ nation }}</h5>
             </div>
           </div>
         </script>
