@@ -3,3 +3,13 @@ body {
   background-color:white;
   color: black;
 }
+
+.navbar-brand img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.trophy-1 img {
+  height:5rem;
+  width: 0.5rem;
+}
