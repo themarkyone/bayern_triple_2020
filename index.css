@@ -3,3 +3,44 @@ body {
   background-color: white;
   color:black;
 }
+
+.navbar-brand img {
+  height: 4rem;
+  width: 4rem;
+}
+
+#headerSection {
+  margin-top:5rem;
+  margin-bottom:5rem;
+}
+
+#headerSection h1 {
+  text-align: center;
+}
+
+#introSection {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  margin-bottom: 5rem;
+}
+
+#carouselSection {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  padding-bottom: 5rem;
+}
+
+#carouselSection h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#cardSection h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#sourceSection h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
