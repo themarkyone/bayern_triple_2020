@@ -37,6 +37,17 @@
                   <a class="nav-link" href="https://fcbayern.com/shop/en/?emsrc=coop&refID=myfcb">Store</a>
                 </li>
               </ul>
+              <span class="navbar-brand">
+                <a href="https://www.dfb.de/en/national-tournaments/">
+                  <img src="https://i.pinimg.com/originals/a4/db/bf/a4dbbf6de0dd9cce46bf5d3f3b1be562.png" class="d-inline-block align-top trophy-1" alt>
+                </a>
+                <a href="https://www.uefa.com/uefachampionsleague/">
+                  <img src="https://i.pinimg.com/originals/14/cd/46/14cd46cb09fd7d2bbc2c6c31f9ad3f85.png" class="d-inline-block align-top trophy-1" alt>
+                </a>
+                <a href="https://www.bundesliga.com/en/bundesliga">
+                  <img src="https://i.pinimg.com/originals/eb/28/ec/eb28ec98f834afe5f34477ac908de66b.png" class="d-inline-block align-top" alt>
+                </a>
+              </span>
             </div>
         </nav>
 
@@ -136,17 +147,16 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 
         <script id="cardTemplate">
-            <div class="card" style="width: 18rem;">
-                <img src="{{ pic }}" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">{ title }</h5>
-                  <a href="{ link }" class="btn btn-primary"> Read More </a>
-                </div>
+          <div class="card mx-auto">
+            <div class="card-body">
+              <img src="{{ pic }}" class="card-img-top card-img"></img>
+              <h5 class="card-title">{{ title }}</h5>
+              <a href="{{ link }}" class="btn btn-primary"><button class="btn mx-auto"> Read More </button></a>
             </div>
+          </div>
         </script>
 
-        <!-- My js -->
+        <!--My js-->
         <script src="./index.js"></script>
-        <!-- <script src="./script/webs.js"></script> -->
     </body>
 </html>

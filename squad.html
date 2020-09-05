@@ -17,6 +17,9 @@
         <!--navbar section-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="collapse navbar-collapse" id="navbarText">
+              <a class="navbar-brand mb-0 h1" href="index.html">
+                <img src="https://officialpsds.com/imageview/rl/2l/rl2l5y_large.png?1521316506" class="d-inline-block align-top" alt>
+              </a>
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="./index.html">Home</a>
@@ -34,9 +37,51 @@
                   <a class="nav-link" href="https://fcbayern.com/shop/en/?emsrc=coop&refID=myfcb">Store</a>
                 </li>
               </ul>
+              <span class="navbar-brand">
+                <a href="https://www.dfb.de/en/national-tournaments/">
+                  <img src="https://i.pinimg.com/originals/a4/db/bf/a4dbbf6de0dd9cce46bf5d3f3b1be562.png" class="d-inline-block align-top trophy-1" alt>
+                </a>
+                <a href="https://www.uefa.com/uefachampionsleague/">
+                  <img src="https://i.pinimg.com/originals/14/cd/46/14cd46cb09fd7d2bbc2c6c31f9ad3f85.png" class="d-inline-block align-top trophy-1" alt>
+                </a>
+                <a href="https://www.bundesliga.com/en/bundesliga">
+                  <img src="https://i.pinimg.com/originals/eb/28/ec/eb28ec98f834afe5f34477ac908de66b.png" class="d-inline-block align-top" alt>
+                </a>
+              </span>
             </div>
         </nav>
 
-        <h1>Bayern Munich Squad 2020</h1>
+        <!--intro section-->
+        <section id="introSection">
+          <h1>Bayern Munich Squad 2020</h1>
+        </section>
+        
+        <!--squad section-->
+        <section id="squadSection">
+          <h2>Members</h2>
+        </section>
+
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <!-- Bootstrap js -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <!-- Handlebars js -->
+        <!-- Include Handlebars from a CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
+        <script id="cardTemplate">
+          <div class="card mx-auto">
+            <div class="card-body">
+              <img src="{{ pic }}" class="card-img-top card-img"></img>
+              <h5 class="card-title">{{ title }}</h5>
+              <a href="{{ link }}" class="btn btn-primary"><button class="btn mx-auto"> Read More </button></a>
+            </div>
+          </div>
+        </script>
+
+        <!--My js-->
+        <script src="./squad.js"></script>
     </body>
 </html>
