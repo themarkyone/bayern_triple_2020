@@ -33,6 +33,7 @@ body {
   padding-left: 15rem;
   padding-right: 15rem;
   padding-bottom: 5rem;
+  background-color: lightgray;
 }
 
 .carousel-item img {
@@ -42,6 +43,7 @@ body {
 
 #carouselCaption {
   text-align: center;
+  font-size: xx-large;
   color:blanchedalmond;
 }
 
@@ -80,11 +82,22 @@ body {
   margin-bottom: 0.5rem;
 }
 
-#sourceSection h3 {
-  text-align: center;
-  padding-bottom: 1rem;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
 }
 
-#sourceSection a {
-  text-align: center;
+.footer span {
+  padding-top: 1rem;
+  margin-top: 3rem;
+  margin-right: 3rem;
+  font-size: small;
+}
+
+.footer p {
+  font-size: xx-small;
 }
