@@ -117,3 +117,71 @@ body {
 .footer p {
   font-size: xx-small;
 }
+
+@media only screen and (max-width: 375px) {
+  #introSection {
+    background-color: lightgrey;
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  #introSection h1 {
+    text-align: center;
+    font-size: small;
+    margin-bottom: 1rem;
+  }
+  #introSection img {
+    display: block;
+    width: 14rem;
+    height: 9rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #squadSection {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+  #squadSection h2 {
+    text-align: center;
+  }
+  #squadSection p {
+    padding-top: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.2rem;
+    font-size: small;
+  }
+  .footer span {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  #introSection {
+    background-color: lightgrey;
+    padding-top: 2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 2rem;
+  }
+  #introSection img {
+    display: block;
+    width: 25rem;
+    height: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #squadSection p {
+    padding-top: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.2rem;
+    font-size: large;
+  }
+  .footer span {
+    display: none;
+  }
+}

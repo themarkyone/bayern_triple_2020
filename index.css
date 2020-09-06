@@ -228,7 +228,7 @@ body {
     margin-bottom: 0.5rem;
   }
   .footer span {
-    padding-left: 0;
+    display: none;
   }
 }
 
@@ -298,5 +298,8 @@ body {
     width: 18rem;
     height: 10rem;
     margin-bottom: 0.5rem;
+  }
+  .footer span {
+    display: none;
   }
 }
