@@ -2,6 +2,7 @@ const card = Handlebars.compile(
     document.querySelector('#cardTemplate').innerHTML
 );
 
+// contains the information about the cards
 const cardLinks = [
     {
         title: "Treble 2019-2020",
@@ -29,6 +30,7 @@ const cardLinks = [
     },
 ]
 
+// foor loop used to display cards 
 for (let c of cardLinks) {
     if (c.rowNum === "1") {
         document.querySelector('#row1').innerHTML += card({

@@ -35,8 +35,19 @@ body {
   padding-bottom: 5rem;
 }
 
+.carousel-item img {
+  width: 50rem;
+  height: 30rem;
+}
+
+#carouselCaption {
+  text-align: center;
+  color:blanchedalmond;
+}
+
 #carouselSection h2 {
   text-align: center;
+  margin-top: 3rem;
   padding-bottom: 1rem;
 }
 
